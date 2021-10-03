@@ -1,28 +1,177 @@
-*{
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: gainsboro;
 }
-p{
+
+.main-head {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+svg {
+    margin-top: 4px;
+}
+
+.heading {
     font-size: 3rem;
-    margin-top: 2%;
+    margin: 2%;
+    color: blue;
 }
-.container{
-    margin-top: 10%;
+
+.container {
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-button{
-    margin-top: 2rem;
+
+button {
+    margin-top: 6rem;
+    padding: 8px;
     font-size: 2rem;
-    outline: none;
-    border: none;
-    height: 2rem;
+    font-style: normal;
+    border-radius: 27px 89px 27px 89px;
+    height: 3.5rem;
     width: 20%;
     cursor: pointer;
     color: white;
-    background-color: coral;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container2 {
+    /* background-color: salmon; */
+    height: 100%;
+    width: 80%;
+    margin: 70px 0px 80px 158px;
+    padding: 2px 20px 0px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-s {
+    margin: 57px 0px 0px 0px;
+    width: 80%;
+    /* background-color: silver; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+}
+
+.note {
+    font-size: 20px;
+    color: red;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.step-font {
+    font-size: 28px;
+    margin-top: 2%;
+    margin: 2px;
+    padding: 2px;
+}
+
+#demo {
+    font-size: 29px;
+    margin: 40px 0px 0px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #demo {
+        margin: 40px 0px 0px 0px;
+        font-size: 23px;
+    }
+    .heading {
+        font-size: 1.4rem;
+        color: blue;
+        align-items: center;
+        display: flex;
+        margin-left: 10 px;
+        justify-content: center;
+        margin: 0px 17px 12px 34px;
+    }
+    button {
+        margin-top: 2rem;
+        font-size: 20px;
+        font-style: normal;
+        border: 1px solid red;
+        border-radius: 27px 164px 25px 154px;
+        height: 3rem;
+        width: 50%;
+        cursor: pointer;
+        color: white;
+        background-color: royalblue;
+    }
+    .note {
+        font-size: 1rem;
+        color: red;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .container-s {
+        margin: 30px 10px 0px 0px;
+        width: 80%;
+        /* background-color: silver; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container2 {
+        /* background-color: salmon; */
+        height: 470px;
+        width: 100%;
+        /* margin: auto;
+        margin-bottom: px; */
+        margin: 20px 0px 80px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .step-font {
+        font-size: 1.1rem;
+        margin-top: 2%;
+        margin: 2px;
+        padding: 2px;
+    }
+    .image {
+        height: 300px;
+        width: 100%;
+    }
 }
